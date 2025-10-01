@@ -1,6 +1,6 @@
-import './App.css'
+// src/App.jsx
 import './App.css';
-import StudentCard from './components/StudentCard';   // ✅ import StudentCard
+import StudentCard from './components/StudentCard';
 
 function App() {
   return (
@@ -12,11 +12,15 @@ function App() {
 
       <main className="dashboard-main">
         <div className="cards-container">
-          {/* TODO: Import and render StudentCard components here */}
+          {/* ✅ Pass props here */}
+          <StudentCard name="Khalid Alenazy" id="202014460" dept="Software Engineering" />
+          <StudentCard name="Sara Ahmed" id="202067890" dept="Computer Science" />
+          <StudentCard name="Ali Hassan" id="202032145" dept="Information Security" />
         </div>
       </main>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
